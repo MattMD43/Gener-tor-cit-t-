@@ -1,0 +1,144 @@
+html {
+    box-sizing: border-box;
+}
+
+
+
+*, *before, *:after {
+    box-sizing: inherit;
+}
+
+::selection {
+    background: #9ADBB3;
+}
+
+.blue {
+    color: #9ADBB3; 
+    display: inline-block;
+    transform: scale(1.5);
+}
+
+.centered {
+    outline: 1px solid #9ADBB3;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+
+}
+
+main {
+    /* background-image: url(quoteground.jpg); */
+    background: linear-gradient(61deg, transparent 45%, rgba(215, 252, 214, 0.68) 30%);
+    outline: 1px solid #9ADBB3;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    width: 50%;
+    min-height: 18.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.5em;
+
+}
+
+#output {
+    padding: .6em;
+    margin-top: .3em;
+    width: 100%;
+    max-width: 100%;
+    min-height: 6.25em;
+    max-height: 9.375em;
+    overflow-y: auto;
+
+    font-size: 1.1em;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: .3em;
+    margin-bottom: 1em;
+}
+
+#button {
+    color: #9ADBB3;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+    outline: .5px solid #9ADBB3;
+    border-top: .2px solid #9ADBB3;
+    border-right: .5px solid #9ADBB3;
+    border-left: .5px solid #9ADBB3;
+    border-bottom: 1.4px solid #9ADBB3;
+
+    border-radius: 1em;
+    padding: .2em .6em;
+
+    transition: all .15s ease-in-out;
+}
+
+#button:hover, button:focus, #button:active {
+    color: #77be93;
+    outline: .5px solid #77be93;
+    border-top: .2px solid #77be93;
+    border-right: .5px solid #77be93;
+    border-left: .5px solid #77be93;
+    border-bottom: 1.4px solid #77be93;
+    transform: scale(1.1);
+}
+
+
+
+
+/* MediaQ */
+
+@media (max-width: 37.875em) {
+    main h1 {
+        font-size: 1.6em;
+    }
+
+    #output {
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width: 25em) {
+    main h1 {
+        font-size: 1.4em;
+    }
+
+    #output {
+        font-size: .8em;
+    }
+}
+
+
+@media (max-width: 14.5625em) {
+
+
+    main h1 {
+        font-size: 1.2em;
+    }
+
+
+    #output {
+        font-size: .7em;
+    }
+
+    #button {
+        font-size: .8em;
+        text-align: center;
+    
+    }
+
+}
