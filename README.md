@@ -1,1 +1,2 @@
-# Gener-tor-cit-t-
+# Generátor citátů
+> generuje citáty pro lepší den 
